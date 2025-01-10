@@ -25,7 +25,7 @@ header h1 {
 
 main {
     padding: 2rem;
-    flex: 1; /* 使main部分占据剩余空间 */
+     /* 使main部分占据剩余空间，删掉了 */
 }
 
 h1, h2 {
@@ -52,6 +52,7 @@ button {
     padding: 1rem;
     cursor: pointer;
     border-radius: 5px;
+    flex: 1
 }
 
 button:hover {
@@ -61,6 +62,7 @@ button:hover {
 footer {
     background-color: #333;
     color: #fff;
+    height: 100px
     text-align: center;
     padding: 1rem;
     width: 100%;
