@@ -22,6 +22,7 @@ header h1 {
 
 main {
     padding: 2rem;
+    margin-bottom: 4rem; /* 增加底部外边距，确保内容不会被页脚遮住 */
 }
 
 h1, h2 {
@@ -59,6 +60,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
-    position: relative; /* 将position属性改为relative */
+    position: absolute; /* 将position属性改为absolute */
     width: 100%;
+    bottom: 0; /* 确保页脚固定在页面底部 */
 }
