@@ -3,6 +3,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -22,7 +25,7 @@ header h1 {
 
 main {
     padding: 2rem;
-    margin-bottom: 4rem; /* 增加底部外边距，确保内容不会被页脚遮住 */
+    flex: 1; /* 使main部分占据剩余空间 */
 }
 
 h1, h2 {
@@ -60,7 +63,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
-    position: absolute; /* 将position属性改为absolute */
+    position: relative; /* 将position属性改为relative */
     width: 100%;
     bottom: 0; /* 确保页脚固定在页面底部 */
 }
