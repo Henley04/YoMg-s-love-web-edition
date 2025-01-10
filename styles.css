@@ -59,7 +59,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
-    position: fixed;
+    position: relative; /* 将position属性改为relative */
     width: 100%;
-    bottom: 0;
 }
