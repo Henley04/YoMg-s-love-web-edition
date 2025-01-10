@@ -24,8 +24,9 @@ header h1 {
 }
 
 main {
+    flex: 1;
     padding: 2rem;
-     /* 使main部分占据剩余空间，删掉了 */
+    margin-bottom: 100px; /* Add margin to prevent content overlap with footer */
 }
 
 h1, h2 {
@@ -52,7 +53,7 @@ button {
     padding: 1rem;
     cursor: pointer;
     border-radius: 5px;
-    flex: 1
+    flex: 1;
 }
 
 button:hover {
@@ -62,10 +63,12 @@ button:hover {
 footer {
     background-color: #333;
     color: #fff;
-    height: 100px
+    height: 70px;
     text-align: center;
     padding: 1rem;
     width: 100%;
-    position: absolute; /* Change relative to absolute */
+    position: fixed; /* Change from relative to fixed */
     bottom: 0;
+    left: 0; /* Ensure footer is aligned to the left */
+    flex-shrink: 0;
 }
