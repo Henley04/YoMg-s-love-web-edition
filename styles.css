@@ -10,10 +10,14 @@ header {
     color: #fff;
     padding: 1rem;
     text-align: center;
+    position: relative; /* 确保header相对定位 */
+    z-index: 1; /* 确保header在最前面 */
 }
 
 header h1 {
-    color: #E91C89; /* 将游戏名称的颜色改为白色 */
+    color: #fff; /* 确保游戏名称的颜色为白色 */
+    position: relative; /* 确保h1相对定位 */
+    z-index: 2; /* 确保h1在header的前面 */
 }
 
 main {
@@ -35,6 +39,19 @@ ul li {
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
 }
 
 footer {
