@@ -12,6 +12,10 @@ header {
     text-align: center;
 }
 
+header h1 {
+    color: #fff; /* 将游戏名称的颜色改为白色 */
+}
+
 main {
     padding: 2rem;
 }
